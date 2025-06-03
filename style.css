@@ -1,0 +1,22 @@
+
+body { margin: 0; font-family: Arial; }
+.navbar { display: flex; justify-content: space-between; padding: 10px 20px; background: #2C3E50; color: white; }
+#nav-links a { margin: 0 10px; color: white; text-decoration: none; }
+#burger { display: none; cursor: pointer; }
+.hero { background: url('../images/banner.jpg') center/cover no-repeat; color: white; padding: 80px 20px; text-align: center; }
+.btn { padding: 10px 20px; margin: 5px; border: none; }
+.primary { background: gold; color: black; }
+.secondary { background: transparent; color: white; border: 2px solid white; }
+.event-cards { display: flex; justify-content: center; gap: 20px; padding: 20px; }
+.card { background: #f4f4f4; padding: 20px; border-radius: 8px; }
+.player-placeholder { background: #ddd; height: 200px; display: flex; align-items: center; justify-content: center; margin: 20px; }
+footer { background: #2C3E50; color: white; text-align: center; padding: 20px; }
+.popup.hidden { display: none; }
+.popup { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; }
+.popup-content { background: white; padding: 20px; border-radius: 8px; position: relative; width: 90%; max-width: 400px; }
+#close-popup { position: absolute; top: 10px; right: 15px; cursor: pointer; }
+@media (max-width: 768px) {
+    #nav-links { display: none; flex-direction: column; }
+    #nav-links.active { display: flex; }
+    #burger { display: block; }
+}
